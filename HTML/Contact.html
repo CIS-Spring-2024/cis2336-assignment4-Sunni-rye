@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contactstyle.css" />
+    <a href="home.html"></a>
+    <script src="Contactscript.js"></script>
+</head>
+<body>
+    <header>
+        <!--Logo and University on top of page-->
+        <div class="LogoUHtop">
+            <img style="display: inline;" src="C:\Users\linda\OneDrive\Desktop\FINAL PROJ FAY\images\LogoUH.png" alt="logoUH" height="15px">
+            <h1 style="display: inline; font-family: sans-serif">University of Houston - Sugarland</h1>
+        </div>
+    </header>
+
+    <!--Navigation Menu and its dropdown to other sites within About, Services, Blog, and Contact-->
+    <nav>
+        <h2 style="font-family: Arial, Helvetica, sans-serif;">Flavor-Om</h2>
+        <ul>
+            <li class="dropdown">
+                <a href="#" class="droptbtn"  > About </a>
+                <div class="dropdown-content">
+                    <a href="home.html"> About us</a>
+                    
+                    <a href="Careers.html"> Careers</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="Menu_CC.html"> Culinary Center</a>
+
+            </li>
+            <li class="dropdown"> 
+                <a href="#"> Blog</a>
+                <div class="dropdown-content">
+                    <a href="#">Post page</a>
+                </div>
+            </li>
+            <li><a  class="active" href="Contact.html"> Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!--Contact header-->
+        <h1 id="contact">Contact</h1>
+
+        <!--Form created-->
+        <form onsubmit="submitForm(event)"  id="s01" style="width: 650px; margin: 0 auto; padding: 50px;"> 
+            <div id="d01">
+                <!--Field types-->
+                <fieldset style="width:100%;height: 500px; background-color: rgb(219, 219, 219);">
+                    <br>
+                    Subject:
+                    <select id="types">
+                        <option values=""></option>
+                        <option values=""></option>
+                    </select><br><br>
+                
+                    Name:<br>
+                    <input type="text" placeholder="First and Last name here" id="lfname"> <br><br>
+                    Email:<br>
+                    <input type="text" placeholder="Enter email address here" id="email"> <br><br>
+                    Phone Number:<br>
+                    <input type="text" placeholder="Enter phone number here" id="phone"> <br><br>
+                    Message:<br>
+                    <textarea rows="10" cols="60"></textarea>
+                    <br> <br>
+                    <!--Submit button-->
+                    <button><b>Submit</b></button>
+                    
+                </fieldset>    
+            </div>
+
+        </form>
+    </main>
+    <footer>
+        <p>Contact: 832-555-5555&ensp; lllopez3@uh.edu 
+            <span>
+                <a href="https://twitter.com/">
+                    <img style="float: right;" src=".../HTML/images/logotwitter.png" alt="logotwitter" height="20px";></a>
+                <a href="https://instagram.com/">
+                    <img style="float: right;" src=".../HTML/images/gramlogo.png" alt="gramlogo" height="20px";></a>
+            </span>
+        </p>
+    </footer>
+
+</body>
+</html>

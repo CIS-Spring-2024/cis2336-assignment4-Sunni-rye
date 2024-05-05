@@ -1,0 +1,144 @@
+/* Top of page style and background */
+body{
+    background-color: rgb(219, 239, 189);
+    background-size: cover;
+    background-size: contain;
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* logo */
+.LogoUHtop{
+    background-color: red;
+    padding: 10px;
+    color:white;
+    font-size: 10px; 
+    
+}
+
+.LogoUHtop h1{
+    font-size: small;
+}
+
+/*Navigation Menu style*/
+h2{
+    background-color: darkred;
+    color:white;
+    font-size: xx-large;
+    text-align: left;
+    margin:0;
+    padding:14px;
+}
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: darkred;
+    
+}
+
+li {
+    display: inline;
+    float:left;
+}
+
+/*Dropdown style for Navigation Menu */
+li a, .dropbtn {
+    display: block;
+    color: antiquewhite;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    color:white;
+    background-color: #c02d2d;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(87, 10, 10);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a:hover {background-color: #c02d2d;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.active {
+    background-color: #c02d2d;
+}
+
+/* Navigation for culinary center styled */
+.culinaryselect ul {
+    width: fit-content;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: rgb(65, 66, 84);
+    text-align: center; 
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.culinaryselect li {
+    display: inline;
+}
+
+.culinaryselect li a {
+    display: inline-block; 
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 22px 28px;
+    border-right: 2px solid white; 
+}
+
+.culinaryselect li:last-child a {
+    border-right: none; 
+}
+
+.culinaryselect li a:hover,
+.culinaryselect li a.activec {
+    color: white;
+    background-color: rgb(37, 38, 48);
+}
+
+/* Image of veggie styled */
+.veggie{
+    text-align: center;
+    position: relative;
+    opacity: 0.8;
+    filter: blur(3px);
+
+}
+
+/* form styled */
+#quantityc {
+    color:white;
+    z-index: 2;    
+    position: absolute; 
+    top: 35%;
+    left: 30%; 
+    z-index: 1;
+}
+
+/* footer bottom */
+footer {
+    padding: 0px;
+    background-color: darkred;
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    color: white;
+}

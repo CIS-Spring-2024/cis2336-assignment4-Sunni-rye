@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="C:\Users\linda\OneDrive\Desktop\FINAL PROJ FAY\HTML\nodeJS\public\CSS\food_form_styled.css"/>
+    <a href="home.html"></a>
+</head>
+<body>
+    <header>
+        <!--Logo and University on top of page-->
+        <div class="LogoUHtop">
+            <img style="display: inline;" src="../HTML/Images/LogoUH.png" alt="logoUH" height="15px">
+            <h1 style="display: inline; font-family: sans-serif">University of Houston - Sugarland</h1>
+        </div>
+    </header>
+
+    <!--Navigation Menu and its dropdown to other sites within About, Services, Blog, and Contact-->
+    <nav>
+        <h2 style="font-family: Arial, Helvetica, sans-serif;">Flavor-Om</h2>
+        <ul>
+            <li class="dropdown">
+                <a href="#" class="droptbtn"> About </a>
+                <div class="dropdown-content">
+                    <a href="home.html"> About us</a>
+                    
+                    <a href="Careers.html"> Careers</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="active" href="Menu_CC.html"> Culinary Center</a>
+            </li>
+            <li class="dropdown"> 
+                <a href="#"> Blog</a>
+                <div class="dropdown-content">
+                    <a href="#">Post page</a>
+                </div>
+            </li>
+            <li><a href="Contact.html"> Contact</a></li>
+        </ul>
+    </nav>
+
+    <main style="font-family: Arial, Helvetica, sans-serif;">
+        <!--Culinary Center navigation-->
+        <nav class="culinaryselect">
+            <h1 style="text-align: center;color:rgb(65, 66, 84)">Culinary Oversight Center</h1>
+            <ul>
+                <li> <a href="Menu_CC.html"> Dishes</a> </li>
+                <li> <a class="activec" href="Food_Form_CC.html"> Food Quantity Check</a> </li>
+                <li> <a href="#" onclick="updateMenu('Calender (N/A)')" id="calendar-msg"> Calender (N/A) </a></li>
+            </ul>   
+        </nav>
+
+        <!--Vegetable image for form background-->
+        <div class="veggie">
+        <img src="C:\Users\linda\OneDrive\Desktop\FINAL PROJ FAY\images\veggies.jpg" height="500px;">   
+        </div>
+
+        <!--Quantity form-->
+        <form action="/C:\Users\linda\OneDrive\Desktop\FINAL PROJ FAY\HTML\order_confirmation.html" method="POST" onsubmit="return validateForm()"  id="quantityc" > <!-- Added action attribute pointing to server-side script -->
+            <div id="d01">
+                <!--Field types-->
+                <fieldset style="width:100%;height: 500px; border:none">
+                    <br><br>
+                    Number of Quantity:
+                    <input type="text" placeholder="Enter number of quantity" id="quantitynum">
+                    <p id="quantityFeedback" style="color: rgb(239, 110, 110);"></p>
+                    <br>
+                    
+                    Select Items:
+                    <select id="types" name="types">
+                        <option value="">    </option>
+                        <option value="Crispy Chicken Nuggets">Crispy Chicken Nuggets (7.99)</option>
+                        <option value="Roasted Arrabbiata Pasta">Roasted Arrabbiata Pasta (11.99)</option>
+                        <option value="Chickpea Medley">Chickpea Medley (13.99)</option>
+                    </select><br><br><br>
+
+                    Special Instructions:<br>
+                    <textarea rows="9" cols="60" name="specialInstructions"></textarea>
+                    <br> <br>
+
+                    Email:<br>
+                    <input type="text" placeholder="Enter email" name="email">
+                    <br><br><br>
+                    <!--Submit button-->
+                    <button type="submit"><b>Submit</b></button>  
+                </fieldset>    
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>Contact: 832-555-5555&ensp; lllopez3@uh.edu 
+            <span>
+                <a href="https://twitter.com/">
+                    <img style="float: right;" src="../HTML/Images/logotwitter.png" alt="logotwitter" height="20px";></a>
+                <a href="https://instagram.com/">
+                    <img style="float: right;" src="../HTML/Images/gramlogo.png" alt="gramlogo" height="20px";></a>
+            </span>
+        </p>
+    </footer>
+    <!--script moved to here to fix errors-->
+    <script src="C:\Users\linda\OneDrive\Desktop\FINAL PROJ FAY\HTML\nodeJS\public\JS\Food_Form_script.js"></script>
+</body>
+</html>

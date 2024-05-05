@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Menu</title>
+    <link rel="stylesheet" href="C:\Users\linda\OneDrive\Desktop\FINAL PROJ FAY\CSS\menu_styled.css" />
+    <a href="home.html"></a>
+    
+</head>
+<body>
+    <header>
+        <!--Logo and University on top of page-->
+        <div class="LogoUHtop">
+            <img style="display: inline;" src="C:\Users\linda\OneDrive\Desktop\FINAL PROJ FAY\images\LogoUH.png" alt="logoUH" height="15px">
+            <h1 style="display: inline; font-family: sans-serif">University of Houston - Sugarland</h1>
+        </div>
+    </header>
+
+    <!--Navigation Menu and its dropdown to other sites within About, Services, Blog, and Contact-->
+    <nav>
+        <h2 style="font-family: Arial, Helvetica, sans-serif;">Flavor-Om</h2>
+        <ul>
+            <li class="dropdown">
+                <a href="#" class="droptbtn"> About </a>
+                <div class="dropdown-content">
+                    <a href="home.html"> About us</a>
+                    
+                    <a href="Careers.html"> Careers</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a  class="active" href="Menu_CC.html"> Culinary Center</a>
+
+            </li>
+            <li class="dropdown"> 
+                <a href="#"> Blog</a>
+                <div class="dropdown-content">
+                    <a href="#">Post page</a>
+                </div>
+            </li>
+            <li><a href="Contact.html"> Contact</a></li>
+        </ul>
+    </nav>
+
+    <main style="font-family: Arial, Helvetica, sans-serif">
+        <!--Culinary Center navigation-->
+        <nav class="culinaryselect">
+            <h1 style="text-align: center; color:rgb(65, 66, 84)">Culinary Oversight Center</h1>
+            <ul>
+                <li> <a class="activec" href="Menu_CC.html"> Dishes</a> </li>
+                <li> <a href="Food_Form_CC.html"> Food Quantity Check</a> </li>
+                <li> <a href="#" id="calendar-msg"> Calendar (N/A) </a></li>
+            </ul>   
+        </nav>
+
+        <!--Dishes images and titles-->
+        <div class="image-wrapper">
+        <div class="image-container">
+        <img src="C:\Users\linda\OneDrive\Desktop\FINAL PROJ FAY\images\nuggets.jpg"  height="200px">
+            <div class="image-title">Crispy Chicken Nuggets</div>
+            <p> Cost: $7.99 (8pcs) </p>
+            <p> Ingredients: chicken, bread crumbs, canola oil</p>
+        </div>
+        <div class="image-container">
+        <img src="C:\Users\linda\OneDrive\Desktop\FINAL PROJ FAY\images\pasta.jpeg" height="200px">
+            <div class="image-title">Roasted Arrabbiata Pasta</div>
+            <p> Cost: $11.99 (250g) </p>
+            <p> Ingredients: pasta, tomato, olive oil, chilli, parsley garnish</p>
+        </div>
+        <div class="image-container">
+        <img src="C:\Users\linda\OneDrive\Desktop\FINAL PROJ FAY\images\chickpea.jpg" height="200px">
+            <div class="image-title">Chickpea Medley</div>
+            <p> Cost: $13.99 (320g) </p>
+            <p> Ingredients: chickpea, tomato, olive oil, mushroom, celery, eggplant, spices cilantro garnish</p>
+        </div>
+
+        
+        <!--"More to be added"-->
+        </div>
+        <div class="more-to-be-added-container">
+            <div class="more-to-be-added">More to be added!</div>
+        </div>
+        <!--included more space so ingredient list for 'Chickpea Melody' is shown-->
+        <div style="height: 250px;"></div>
+    </main>
+
+    <footer>
+        <p>Contact: 832-555-5555&ensp; lllopez3@uh.edu 
+            <span>
+                <a href="https://twitter.com/">
+                    <img style="float: right;" src="C:\Users\linda\OneDrive\Desktop\FINAL PROJ FAY\images\logotwitter.png" alt="logotwitter" height="20px";></a>
+                <a href="https://instagram.com/">
+                    <img style="float: right;" src="C:\Users\linda\OneDrive\Desktop\FINAL PROJ FAY\images\gramlogo.png" alt="gramlogo" height="20px";></a>
+            </span>
+        </p>
+    </footer>
+    <!--Script moved from head to body to fix error-->
+    <script src="C:\Users\linda\OneDrive\Desktop\FINAL PROJ FAY\JS\Menu_script.js"></script>
+</body>
+</html>

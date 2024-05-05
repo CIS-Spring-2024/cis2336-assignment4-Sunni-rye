@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Order Confirmation</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    p {
+        color: #666;
+    }
+
+    .total {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .total span {
+        color: #f00;
+    }
+
+    .btn-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .btn {
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+</style>
+<body>
+    <h1> Order Confirmation</h1>
+    <p>Your order was successful!</p>
+    <!--Order details-->
+    <p>Selected Item: <span id="selectedItem"></span></p>
+    <p>Total: $<span id="total"></span></p>
+    <div class="btn-container">
+        <a href="Food_form_CC.html" class="btn">Return to Order Form</a>
+    </div>
+
+    <script>
+        // Extract total and selected item type from query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const total = urlParams.get('total');
+        const itemType = urlParams.get('type');
+
+        // Display total and selected item type on the page
+        document.getElementById('total').innerText = total;
+        document.getElementById('selectedItem').innerText = itemType;
+    </script>
+    
+</body>
+</head>
+</html>

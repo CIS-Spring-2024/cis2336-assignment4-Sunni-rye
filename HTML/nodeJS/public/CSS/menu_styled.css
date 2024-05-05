@@ -1,0 +1,176 @@
+/* Top of page style and background */
+body{
+    background-color: rgb(219, 239, 189);
+    background-size: cover;
+    background-size: contain;
+    padding: 0;
+    margin: 0;
+    overflow-x:hidden
+}
+
+/* logo */
+.LogoUHtop{
+    background-color: red;
+    padding: 10px;
+    color:white;
+    font-size: 10px; 
+    
+}
+
+.LogoUHtop h1{
+    font-size: small;
+}
+
+/*Navigation Menu style*/
+h2{
+    background-color: darkred;
+    color:white;
+    font-size: xx-large;
+    text-align: left;
+    margin:0;
+    padding:14px;
+}
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: darkred;
+    
+}
+
+li {
+    display: inline;
+    float:left;
+}
+
+/*Dropdown style for Navigation Menu */
+li a, .dropbtn {
+    display: block;
+    color: antiquewhite;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    color:white;
+    background-color: #c02d2d;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(87, 10, 10);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a:hover {background-color: #c02d2d;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.active {
+    background-color: #c02d2d;
+}
+
+/*Navigation style for culinary center */
+.culinaryselect ul {
+    width: fit-content;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: rgb(65, 66, 84);
+    text-align: center; 
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.culinaryselect li {
+    display: inline;
+}
+
+.culinaryselect li a {
+    display: inline-block; 
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 22px 28px;
+    border-right: 2px solid white; 
+}
+
+.culinaryselect li:last-child a {
+    border-right: none; 
+}
+
+.culinaryselect li a:hover,
+.culinaryselect li a.activec {
+    color: white;
+    background-color: rgb(37, 38, 48);
+}
+
+/* Images styled */
+.image-wrapper {
+    
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    height: calc(100vh - 150px);
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    background-color: rgb(90, 138, 97);
+    padding: 20px;
+    margin: 40px;
+    text-align: center;
+}
+
+.image-container img {
+    height: 230px;
+}
+.image-title {
+    font-size: 24px;
+    margin-top: 10px; 
+   
+}
+
+/* "More to be added!" styled */
+.more-to-be-added-container {
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
+    transform: translateY(-160%);
+
+ 
+    margin-bottom: 20px; 
+}
+
+.more-to-be-added {
+    font-style: italic;
+    color: white;
+    font-size: xx-large;
+    text-align: center; 
+    background-color: red;
+    border: 10px solid black;
+    border-color: red;
+    box-sizing: border-box;
+    
+}
+
+/* footer bottom */
+footer {
+    padding: 0px;
+    background-color: darkred;
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    color: white;
+}
